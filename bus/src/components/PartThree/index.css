@@ -1,0 +1,67 @@
+.container-part-three {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    border: 0.10rem solid darkgray;
+    background-color: transparent;
+    color: #ffffff;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    margin-top: 5rem;
+    overflow: hidden;  /*Impede que o pseudo-elemento ultrapasse os limites da card */
+}
+
+/* Pseudo-elemento ::after para o efeito */
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Começa no fundo da div */
+    left: 0;
+    width: 100%;
+    height: 0%; /* Inicialmente, o pseudo-elemento tem altura 0% */
+    background-color: rgba(255, 0, 0, 0.7); /* Cor inicial em tons de vermelho */
+    transition: height 0.5s ease; /* Transição suave da altura */
+    z-index: 0; /* Fica abaixo do conteúdo */
+    pointer-events: none; /* Impede que o pseudo-elemento interfira com a interação */
+}
+
+/* Efeito no hover: o pseudo-elemento expande para cobrir a div */
+.card:hover::after {
+    height: 100%; /* A altura vai até 100% ao passar o mouse, criando o efeito de subida */
+}
+
+/* Outros estilos */
+.card p {
+    font-size: 1.5rem;
+    position: relative; /* Garante que o texto fique acima do pseudo-elemento */
+    z-index: 1; /* Fica acima do pseudo-elemento ::after */
+}
+
+.card img {
+    width: 5rem;
+    margin-bottom: 1rem; /* Ajuste para imagem ficar separada do texto */
+}
+.card-2, .card-6{
+    background-color: red;
+    width: 40rem;
+}

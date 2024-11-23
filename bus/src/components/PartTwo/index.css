@@ -1,0 +1,215 @@
+.about{
+    min-height: auto;
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+.about-one{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+.about-one h1 div{
+    background-color: red;
+    display: inline-block; /* Ajusta automaticamente ao conteúdo */
+    padding: 0.5rem; /* Adiciona algum espaçamento interno se necessário */
+    border-radius: 2rem; 
+}
+.about-one h1{
+    overflow: hidden;
+}
+.about-one span{
+    color: red;
+    font-size: 2rem;
+    overflow: hidden;
+}
+.about-two{
+    background-image: url('../../assets/bus1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width:60%;
+    margin-right: 5rem;
+    position: relative; 
+    border-radius: 2rem;
+    overflow:  hidden;
+}
+.about-two::after{
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    top: 15rem;            /* Controla a distância do topo */
+    left: 25rem;           /* Controla a distância da esquerda */
+    width: 30vh;          /* Controla a largura da sobreposição */
+    height: 40vh;         /* Controla a altura da sobreposição */
+    background-image: url('../../assets/driver.jpg');
+    background-position: center;
+    background-size: cover;/* Cor de fundo semitransparente */
+    border-radius: 2rem;
+    z-index: 1;  
+    border: 0.3rem solid #ffffff;
+}
+@media(min-width: 1024px) and (max-width: 1339px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+        margin-left: 2rem;
+    }
+    .about-one h1{
+        font-size: 2rem;
+    }
+    .about-one span{
+        font-size: 1.5rem;
+    }
+    .about-two{
+        height: 70vh;
+        width:100%;
+        position: relative; 
+        border-radius: 2rem;
+    }
+    .about-two::after{
+        top: 7rem;
+       left: 20rem;
+       height:15rem;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+        margin-left: 2rem;
+    }
+    .about-one h1{
+        font-size: 2rem;
+    }
+    .about-one span{
+        font-size: 1.5rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:100%;
+        position: relative; 
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+    .about-two::after{
+       overflow: hidden;
+       left: 40rem;
+    }
+}
+@media(min-width: 425px) and (max-width: 768px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 2rem;
+    }
+    .about-one span{
+        font-size: 1.5rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:90%;
+        margin-right: 5rem;
+        position: relative; 
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-left: 1.5rem;
+    }
+    .about-two::after{
+       overflow: hidden;
+       left: 40rem;
+    }
+}
+@media(min-width: 375px) and (max-width: 425px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 1.5rem;
+    }
+    .about-one span{
+        font-size: 1rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:85%;
+        margin-right: 5rem;
+        position: relative; 
+        border-radius: 2rem;
+        margin-left: 1.5rem;
+    }
+    .about-two::after{
+       
+        position: absolute;
+        top: 5rem;            /* Controla a distância do topo */
+        left: 16rem;           /* Controla a distância da esquerda */
+        width: 17vh;          /* Controla a largura da sobreposição */
+        height: 27vh;         /* Controla a altura da sobreposição */
+        background-image: url('../../assets/driver.jpg');
+        background-position: center;
+        background-size: cover;/* Cor de fundo semitransparente */
+        border-radius: 2rem;
+        z-index: 1;  
+    }
+}
+@media(min-width: 320px) and (max-width: 375px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 1.5rem;
+    }
+    .about-one span{
+        font-size: 1rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:80%;
+        margin-right: 5rem;
+        position: relative; 
+        border-radius: 2rem;
+        margin-left: 2rem;
+    }
+    .about-two::after{
+       
+        position: absolute;
+        top: 5rem;            /* Controla a distância do topo */
+        left: 10rem;           /* Controla a distância da esquerda */
+        width: 17vh;          /* Controla a largura da sobreposição */
+        height: 27vh;         /* Controla a altura da sobreposição */
+        background-image: url('../../assets/driver.jpg');
+        background-position: center;
+        background-size: cover;/* Cor de fundo semitransparente */
+        border-radius: 2rem;
+        z-index: 1;  
+    }
+}

@@ -1,0 +1,133 @@
+.container-star {
+    min-height: auto;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;  /* Garante que a largura ocupe 100% do contêiner */
+}
+
+.star-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    width: 100%;  /* Garante que ocupe toda a largura disponível */
+    box-sizing: border-box;  /* Evita que o padding afete a largura total */
+}
+
+.star-one h3 {
+    font-size: 3rem;
+}
+
+.star-one p {
+    font-size: 1rem;
+    word-wrap: break-word;  /* Permite quebra de linha quando necessário */
+    overflow-wrap: break-word;  /* Complementa a quebra de linha */
+}
+
+.star-two {
+    background-image: url('../../assets//starlink.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 25rem;
+    min-height: 25rem;
+    margin-left: 40rem;
+    flex-shrink: 0;  /* Evita que o tamanho da imagem diminua muito */
+    width: 25rem;  /* Garante que a largura seja flexível */
+    height: 25rem;  /* Garante que a altura seja ajustada proporcionalmente */
+    overflow: hidden;
+}
+.pp{
+    overflow: hidden;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .container-star {
+        flex-direction: column-reverse; /* Inverte a ordem no layout em telas pequenas */
+        gap: 0;
+    }
+    
+    .star-one h3 {
+        display: none;  /* Oculta o título em telas pequenas */
+    }
+    
+    .star-two {
+        min-width: auto;  /* Ajusta a largura para ser mais flexível */
+        min-height: auto; /* Ajusta a altura para ser mais flexível */
+        margin-left: 18rem; /* Remove a margem esquerda */
+    }
+    
+    .star-one p {
+        font-size: 1.5rem;
+        padding: 0.5rem;  /* Adiciona um pouco de padding para melhorar a legibilidade */
+    }
+}
+@media(min-width: 425px) and (max-width: 768px) {
+    .container-star {
+        flex-direction: column-reverse; /* Inverte a ordem no layout em telas pequenas */
+        gap: 0;
+    }
+    
+    .star-one h3 {
+        display: none;  /* Oculta o título em telas pequenas */
+    }
+    
+    .star-two {
+        min-width: auto;  /* Ajusta a largura para ser mais flexível */
+        min-height: auto; /* Ajusta a altura para ser mais flexível */
+        margin-left: 7rem; /* Remove a margem esquerda */
+    }
+    
+    .star-one p {
+        font-size: 1rem;
+        padding: 0.5rem;  /* Adiciona um pouco de padding para melhorar a legibilidade */
+    }
+}
+@media(min-width: 375px) and (max-width: 425px) {
+    .container-star {
+        flex-direction: column-reverse; /* Inverte a ordem no layout em telas pequenas */
+        gap: 0;
+    }
+    
+    .star-one h3 {
+        display: none;  /* Oculta o título em telas pequenas */
+    }
+    
+    .star-two {
+        min-width: auto;  /* Ajusta a largura para ser mais flexível */
+        min-height: auto; /* Ajusta a altura para ser mais flexível */
+        margin-left: 5rem; /* Remove a margem esquerda */
+    }
+    
+    .star-one p {
+        font-size: 1rem;
+        padding: 0.5rem;  /* Adiciona um pouco de padding para melhorar a legibilidade */
+    }
+}
+@media(min-width: 320px) and (max-width: 375px) {
+    .container-star {
+        flex-direction: column-reverse; /* Inverte a ordem no layout em telas pequenas */
+        gap: 0;
+    }
+    
+    .star-one h3 {
+        display: none;  /* Oculta o título em telas pequenas */
+    }
+    
+    .star-two {
+        min-width: auto;  /* Ajusta a largura para ser mais flexível */
+        min-height: auto; /* Ajusta a altura para ser mais flexível */
+        margin-left: 4rem; /* Remove a margem esquerda */
+    }
+    
+    .star-one p {
+        font-size: 0.8rem;
+        padding: 0.5rem;  /* Adiciona um pouco de padding para melhorar a legibilidade */
+    }
+}

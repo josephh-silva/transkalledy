@@ -1,0 +1,21 @@
+.container-par{
+    min-height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.imgs{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center;
+    overflow: hidden;
+}
+.partness img{
+   width: 10rem;
+   height: 10rem;
+   border-radius: 20%;
+}

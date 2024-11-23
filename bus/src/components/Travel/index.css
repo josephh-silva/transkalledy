@@ -1,0 +1,252 @@
+.container-travel{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.travel-part-one{
+    background-image: url('../../assets/bus5.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+    min-width: 70vh;
+    position: relative;
+}
+.travel-part-one::before {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de escurecimento semitransparente */
+    z-index: 0; /* Garante que o pseudo-elemento ::before fique abaixo do texto */
+  }
+.travel-part-one::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    top: 24rem;            /* Controla a distância do topo */
+    left: 2rem;           /* Controla a distância da esquerda */
+    width: 50vh;          /* Controla a largura da sobreposição */
+    height: 30vh;         /* Controla a altura da sobreposição */
+    background-image: url('../../assets/logo.jpg');
+    background-position: center;
+    background-size: cover;/* Cor de fundo semitransparente */
+    z-index: 1;          /* Garante que a sobreposição fique acima do fundo */
+  }
+.travel-part-two{
+    height: 65vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    background-color: black;
+    color: white;
+}
+.travel-part-two p{
+    font-size: 1.3rem;
+}
+.travel-part-two span{
+    font-size: 1.3rem;
+    min-height: auto;
+}
+.travels {
+   min-height: 20vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  }
+.travels span{
+    font-size: 2rem;
+}
+@media(min-width: 1024px) and (max-width: 1440px){
+    .container-travel{
+        flex-direction: row;
+        padding-left: 7rem;
+    }
+    .travel-part-two{
+        height: 75vh;
+        width: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+        padding-left: 1rem;
+    }
+    .travel-part-one{
+        min-height: 70vh;
+        min-width: 40%;
+        position: relative;
+    }
+    .travel-part-one::after {
+        top: 25rem;
+        left: 3rem;
+        width: 15rem;
+        height: 10rem;
+     }
+     .travel-part-one::before{
+        border-radius: 0;
+     }
+     .travel-part-two p{
+        font-size: 1.3rem;
+    }
+    .travel-part-two span{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .container-travel{
+        gap: 7rem;
+    }
+    .travel-part-one{
+        min-height: 70vh;
+        min-width: 100%;
+        position: relative;
+        border-radius: 2rem;
+    }
+    .travel-part-one::after {
+       display: none;
+    }
+      .travel-part-two{
+        height: 75vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+        border-radius: 2rem;
+        padding-left: 1rem;
+    }
+    .travel-part-two p{
+        font-size: 1rem;
+    }
+    .travel-part-two .counter{
+        font-size: 1.2rem;
+        min-height: auto;
+        margin: 1rem;
+    }
+}
+@media(min-width: 425px) and (max-width: 768px){
+    .container-travel{
+        gap: 7rem;
+    }
+    .travel-part-one{
+        min-height: 70vh;
+        min-width: 100%;
+        position: relative;
+    }
+    .travel-part-one::after {
+        top: 24rem;            /* Controla a distância do topo */
+        left: 5rem;           /* Controla a distância da esquerda */
+        width: 35vh;          /* Controla a largura da sobreposição */
+        height: 25vh;         /* Controla a altura da sobreposição */
+        border-radius: 1rem;
+      }
+      .travel-part-two{
+        height: 75vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+        border-radius: 2rem;
+        padding-left: 1rem;
+    }
+    .travel-part-two p{
+        font-size: 1rem;
+    }
+    .travel-part-two .counter{
+        font-size: 1.2rem;
+        min-height: auto;
+        margin: 1rem;
+    }
+}
+@media(min-width: 375px) and (max-width: 425px){
+    .container-travel{
+        gap: 7rem;
+    }
+    .travel-part-one{
+        min-height: 70vh;
+        min-width: 100%;
+        position: relative;
+    }
+    .travel-part-one::after {
+        top: 24rem;            /* Controla a distância do topo */
+        left: 3.5rem;           /* Controla a distância da esquerda */
+        width: 35vh;          /* Controla a largura da sobreposição */
+        height: 25vh;         /* Controla a altura da sobreposição */
+        border-radius: 1rem;
+      }
+      .travel-part-two{
+        height: 75vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+        border-radius: 2rem;
+        padding-left: 1rem;
+    }
+    .travel-part-two p{
+        font-size: 1rem;
+    }
+    .travel-part-two .counter{
+        font-size: 1.2rem;
+        min-height: auto;
+        margin: 1rem;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 375px){
+    .container-travel{
+        gap: 7rem;
+    }
+    .travel-part-one{
+        min-height: 70vh;
+        min-width: 100%;
+        position: relative;
+    }
+    .travel-part-one::after {
+        top: 24rem;            /* Controla a distância do topo */
+        left: 2rem;           /* Controla a distância da esquerda */
+        width: 35vh;          /* Controla a largura da sobreposição */
+        height: 25vh;         /* Controla a altura da sobreposição */
+        border-radius: 1rem;
+      }
+      .travel-part-two{
+        height: 75vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+        border-radius: 2rem;
+        padding-left: 1rem;
+    }
+    .travel-part-two p{
+        font-size: 1rem;
+    }
+    .travel-part-two .counter{
+        font-size: 1.2rem;
+        min-height: auto;
+       
+        
+
+    }
+}
+
+

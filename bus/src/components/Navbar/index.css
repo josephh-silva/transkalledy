@@ -1,0 +1,115 @@
+.container-nav{
+    min-height: auto;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo{
+    background-image: url('../../assets/logo-nav.jpg');
+    height: 10vh;
+    width: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-color: #bf0603;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    justify-content: space-evenly;
+}
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+} button{
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 10rem;
+    background-color: #bf0603;
+    color: #ffffff;
+}
+@media(min-width: 425px) and (max-width: 768px){
+    .container-nav{
+        min-height: 20vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        width: 19rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
+    }
+    button{
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: #bf0603;
+        color: #ffffff;
+        width: 10rem;
+        
+    }
+}
+
+@media(min-width: 375px) and (max-width: 425px){
+    .container-nav{
+        min-height: 20vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        width: 19rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
+    }
+    button{
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: #bf0603;
+        color: #ffffff;
+        width: 10rem;
+        
+    }
+}
+
+@media(min-width: 320px) and (max-width: 375px){
+    .container-nav{
+        min-height: 20vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        width: 19rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
+    }
+    button{
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: #bf0603;
+        color: #ffffff;
+        width: 10rem;
+        
+    }
+}
+
