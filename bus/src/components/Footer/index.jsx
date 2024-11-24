@@ -1,50 +1,60 @@
 import { useState } from 'react'
 import './index.css'
+import Logo from '../../assets/logo-nav.jpg'
+import Arrow from '../../assets/arrow-f.svg'
+import Map from '../../assets/map.svg'
+import Phne from '../../assets/phone-f.svg'
+import Email from '../../assets/email.svg'
 function Footer() {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [desc, setDesc] = useState("")
-
     return (
 
-        <>
-            <section className="container-fluid container-f">
-                <div className="one-f">
 
+        <section className="container-fluid container-f">
+            <div className="one-f">
+                <div className="img-logo">
+                    <img src={Logo} alt="img" />
                 </div>
-                <div className="form">
-                    <form >
-                        <p>Contato</p>
-                        <div className="inputs">
-                            <input
-                                type="text"
-                                id='name'
-                                placeholder='Seu Nome'
-                                onChange={(ev) => setName(ev.target.value)}
-                                value={name} />
-                        </div>
-                        <div className="inputs">
-                            <input
-                                type="text"
-                                id='email'
-                                placeholder='Seu Email'
-                                onChange={(ev) => setEmail(ev.target.value)}
-                                value={email} />
-                        </div>
-                        <div className="inputs">
-                            <textarea
-                                name="desc"
-                                id="desc"
-                                placeholder='Sua Duvida'
-                                onChange={(ev) => setDesc(ev.target.value)}
-                                value={desc}
-                            ></textarea>
-                        </div>
-                        <button>Enviar</button>
-                    </form>
+                <p>O melhor do transporte para vc</p>
+            </div>
+            <div className='linkss'>
+                <span>Links Rapidos </span>
+                <div className="links-a">
+                    <div className="set">
+                        <img src={Arrow} alt="" />
+                        <a href="#span-one" className="link">Sobre nós</a>
+                    </div>
+                    <div>
+                        <img src={Arrow} alt="" />
+                        <a href="#frot" className="link">Frota</a>
+                    </div>
+                    <div>
+                        <img src={Arrow} alt="" />
+                        <a href="#solutions" className="link">Soluções</a>
+                    </div>
                 </div>
-            </section>
-        </>
+            </div>
+            <div className="contacts">
+                <div className="infos">
+                    <div className='box'>
+                        <img src={Map} alt="" />
+                        <p>
+                            Castanheira/Belém, <br />
+                            Passagem Jardim Anabiju,
+                            Número 80
+                        </p>
+                    </div>
+                    <div className="phone">
+                        <img src={Phne} alt="" />
+                        <span>(91) 99315-0080</span>
+                    </div>
+                    <div className="email">
+                        <img src={Email} alt="" />
+                        <span>contato@transkalledy.com.br</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     )
 }
 export default Footer

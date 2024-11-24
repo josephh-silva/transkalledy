@@ -1,6 +1,6 @@
 
 import './index.css';
-import VideoBus from '../../assets/bus2.mp4';
+import VideoBus from '../../assets/busP.mp4';
 import Logo from '../../assets/logo.jpg';
 
 function ParteOne() {

@@ -23,7 +23,6 @@ function App() {
       <Discover/>
       <Carr/>
       <Partnes/>
-      <StarLink/>
       <Travel/>
       <Footer/>
     </main>

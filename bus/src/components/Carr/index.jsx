@@ -8,6 +8,13 @@ import bus3 from '../../assets/bus3.jpg';
 import bus4 from '../../assets/bus4.jpg';
 import bus5 from '../../assets/bus5.jpg';
 import bus6 from '../../assets/bus6.jpg';
+import seat1 from '../../assets/seat1.jpg';
+import seat2 from '../../assets/seat2.jpg';
+import seat3 from '../../assets/seat3.jpg';
+import seat4 from '../../assets/seat4.jpg';
+import seat5 from '../../assets/seat5.jpg';
+import seat7 from '../../assets/seat7.jpg';
+import seat8 from '../../assets/seat8.jpg';
 import { useEffect, useState } from 'react';
 
 const imgs = [
@@ -16,7 +23,14 @@ const imgs = [
     { id: '3', imgbus: bus3 },
     { id: '4', imgbus: bus4 },
     { id: '5', imgbus: bus5 },
-    { id: '6', imgbus: bus6 }
+    { id: '6', imgbus: bus6 },
+    { id: '7', imgbus: seat1},
+    { id: '8', imgbus: seat2 },
+    { id: '9', imgbus: seat3 },
+    { id: '10', imgbus: seat4 },
+    { id: '11', imgbus: seat5 },
+    { id: '12', imgbus: seat7 },
+    { id: '13', imgbus: seat8 }
 ];
 
 function Carr() {
@@ -26,7 +40,7 @@ function Carr() {
             if (window.innerWidth < 1024) {
                 setSliderPrev(1); // Para telas menores que 1024px, exibe 1 slide
             } else {
-                setSliderPrev(1); // Para telas maiores, exibe 3 slides
+                setSliderPrev(3); // Para telas maiores, exibe 3 slides
             }
         };
 
@@ -71,8 +85,8 @@ function Carr() {
                     
     return (
         <>
-            <section className='container-fluid container-swiper'>
-                <div className="front">
+            <section className='container-fluid container-swiper' id='frot'>
+                <div className="front" >
                     <h3 className='h3-f'>Nossa Frota</h3>
                     <div className='p-t'>
                     <p className='p-f'>

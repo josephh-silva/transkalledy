@@ -39,8 +39,8 @@ function PartTwo(){
     return(
         <>
             <section className="container about">
-                <div className="about-one">
-                    <span className='span'>Sobre Nós</span>
+                <div className="about-one" id='span-one'>
+                    <span className='span' >Sobre Nós</span>
                     <h1 className='h1'>
                     Há mais de 15 anos <br />
                     <div>oferecemos serviço</div> de fretamento de ônibus <br />

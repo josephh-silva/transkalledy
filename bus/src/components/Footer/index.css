@@ -1,89 +1,110 @@
 .container-f{
-    min-height: auto;
+    min-height: 40vh;
     background-color: #000000;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-}
-.one-f{
-    background-image: url('../../assets//logo-nav.jpg');
-    height: 30vh;
-    width: 30rem;
-    background-position: center;
-    background-size: cover;
-    border-radius: 2rem;
-}
-.form{
+    align-items: center;
     color: #ffffff;
+}
+.img-logo img{
+    height: 20vh;
+}
+.linkss{
+
+    min-width:30rem ;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.links-a{
+    height: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70vh;
-    height: 50vh;
-    text-align: center;
+    justify-content: space-evenly;
 }
-.form p{
-    font-size: 2rem;
+.links-a a{
+    text-decoration: none;
+    color: red;
 }
-.form button{
-    border: none;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-color: #bf0603;
-    color: #ffffff;
+.contacts{
+    height: 30vh;
 }
-.inputs{
+.infos{
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-   
 }
-.inputs input, textarea{
-    width: 20rem;
-    height: 3rem;
-    border: none;
-    border-radius: 0.5rem;
+.box{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
-.inputs textarea{
-    height: 5rem;
+.phone{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.email{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+@media(min-width: 1024px) and (max-width: 1440px){
+    .container-f{
+        gap: 0rem;
+    } 
+    .linkss{
+
+        min-width:10rem ;
+        min-height: 10vh;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .container-f{
+        justify-content: center;
+        gap: 3rem;
+        
+    }
+
+    .linkss{
+
+        min-width:10rem ;
+        min-height: 10vh;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+@media(min-width: 425px) and (max-width: 768px){
+    .container-f{
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+@media(min-width: 375px) and (max-width: 425px){
+    .container-f{
+        justify-content: center;
+        gap: 3rem;
+    }
 }
 @media(min-width: 320px) and (max-width: 375px){
     .container-f{
-        padding: 2rem;
-    }
-    form{
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        width: 10vh;
-        height: 50vh;
-        text-align: center;
+        gap: 3rem;
     }
-    .form p{
-        font-size: 2rem;
-    }
-    .form button{
-        border: none;
-        padding: 1rem;
-        border-radius: 2rem;
-        background-color: #bf0603;
-        color: #ffffff;
-    }
-    .inputs{
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-       
-    }
-    .inputs input, textarea{
-        width: 15rem;
-        height: 3rem;
-        border: none;
-        border-radius: 0.5rem;
-    }
-
 }

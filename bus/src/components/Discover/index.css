@@ -4,13 +4,12 @@
     padding: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
 .d-one{
     background-image: url('../../assets/logo.jpg');
-    min-height: 30rem;
-    min-width: 29rem;
     background-position: center;
     background-size: cover;
     border-radius: 2rem;
@@ -37,21 +36,22 @@
     font-size: 2.5rem;
 }
 .d-two-two{
-    height: 15rem;
+    min-height: 15rem;
+    min-width: 70rem;
     border-radius: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     color: #ffffff;
     position: relative;
-    background-image: url('../../assets//seats.jpg');
+    background-image: url('../../assets/seat1.jpg');
     background-position: center;
     background-size: cover;
 }
 .cards{
     position: absolute;
     top: 10rem;
-    left: 1.5rem;
+    left: 9rem;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -87,60 +87,32 @@
 .card-services img{
     width: 3rem;
 }
-@media(min-width: 769px) and (max-width: 1024px){
-    .d-one{
-        background-image: url('../../assets/kale.jpg');
-        min-height: 25rem;
-        min-width: 15rem;
-        background-position: center;
-        background-size: cover;
-        border-radius: 2rem;
-        
-    }
-    .d-two-one span{
-        font-size: 1rem;
-        text-align: center;
-        color: #d90429;
-    }
-    .d-two-one h3{
-        font-size: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    .d-two-one p{
-        text-align: center;
-    }
+@media(min-width: 1024px) and (max-width: 1440px){
+   
+    
     .d-two-two{
-        background-color: #d90429;
-        text-align: center;
+        min-height: 15rem;
+        min-width: 18rem;
+        border-radius: 1rem;
+        margin-bottom: 0;
+
     }
     .cards{
         position: absolute;
-        top: 10rem;
-        left: 5rem;
+        top: 12rem;
+        left: 1.7rem;
         display: flex;
         flex-wrap: wrap;
+        gap: 3rem;
         height: auto;
-        width: auto; 
-        gap: 1;
     }
     .card-services{
-        min-height: 10rem;
-        width: 10rem;
+        width: 15rem;
     }
     
 }
 @media(min-width: 425px) and (max-width: 768px){
-    .d-one{
-        background-image: url('../../assets/kale.jpg');
-        min-height: 25rem;
-        min-width: 15rem;
-        background-position: center;
-        background-size: cover;
-        border-radius: 2rem;
-        
-    }
+   
     .d-two-one span{
         font-size: 1rem;
         text-align: center;
@@ -150,40 +122,31 @@
         font-size: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        text-align: center;
     }
     .d-two-one p{
         text-align: center;
     }
     .d-two-two{
-        background-color: #d90429;
-        margin-bottom: 30rem;
+        min-height: 15rem;
+        min-width: 18rem;
+        border-radius: 1rem;
+        margin-bottom: 0;
+
     }
     .cards{
         position: absolute;
         top: 20rem;
-        left: 4rem;
+        left: 6rem;
         display: flex;
         flex-wrap: wrap;
+        gap: 3rem;
         height: auto;
-        min-width: auto
-
-    }
-    .card-services{
-        min-height: 9rem;
-        min-width: 12rem;
+        display: none;
     }
     
 }
 @media(min-width: 375px) and (max-width: 425px){
-    .d-one{
-        background-image: url('../../assets/kale.jpg');
-        min-height: 25rem;
-        min-width: 15rem;
-        background-position: center;
-        background-size: cover;
-        border-radius: 2rem;
-        
-    }
     .d-two-one span{
         font-size: 1rem;
         text-align: center;
@@ -193,19 +156,22 @@
         font-size: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        text-align: center;
     }
     .d-two-one p{
         text-align: center;
     }
     .d-two-two{
-        background-color: #d90429;
-        margin-bottom: 35rem;
+        min-height: 15rem;
+        min-width: 18rem;
+        border-radius: 1rem;
+        margin-bottom: 13rem;
 
     }
     .cards{
         position: absolute;
         top: 20rem;
-        left: 2rem;
+        left: 1.7rem;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
@@ -215,15 +181,7 @@
     
 }
 @media(min-width: 320px) and (max-width: 375px){
-    .d-one{
-        background-image: url('../../assets/kale.jpg');
-        min-height: 25rem;
-        min-width: 15rem;
-        background-position: center;
-        background-size: cover;
-        border-radius: 2rem;
-        
-    }
+   
     .d-two-one span{
         font-size: 1rem;
         text-align: center;
@@ -233,19 +191,22 @@
         font-size: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        text-align: center;
     }
     .d-two-one p{
         text-align: center;
     }
     .d-two-two{
-        background-color: #d90429;
-        margin-bottom: 30rem;
+        min-height: 15rem;
+        min-width: 18rem;
+        border-radius: 1rem;
+        margin-bottom: 13rem;
 
     }
     .cards{
         position: absolute;
         top: 20rem;
-        left: 0;
+        left: 1.7rem;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;

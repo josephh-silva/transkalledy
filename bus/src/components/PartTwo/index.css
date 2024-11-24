@@ -11,7 +11,7 @@
  justify-content: space-evenly;
 }
 .about-one h1 div{
-    background-color: red;
+    background-color: #d00000;
     display: inline-block; /* Ajusta automaticamente ao conteúdo */
     padding: 0.5rem; /* Adiciona algum espaçamento interno se necessário */
     border-radius: 2rem; 
@@ -20,7 +20,7 @@
     overflow: hidden;
 }
 .about-one span{
-    color: red;
+    color: #d00000;
     font-size: 2rem;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     background-image: url('../../assets/bus1.jpg');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 60vh;
     width:60%;
     margin-right: 5rem;
     position: relative; 
@@ -38,10 +38,10 @@
 .about-two::after{
     content: ''; /* Necessário para criar o pseudo-elemento */
     position: absolute;
-    top: 15rem;            /* Controla a distância do topo */
+    top: 10rem;            /* Controla a distância do topo */
     left: 25rem;           /* Controla a distância da esquerda */
     width: 30vh;          /* Controla a largura da sobreposição */
-    height: 40vh;         /* Controla a altura da sobreposição */
+    height: 30vh;         /* Controla a altura da sobreposição */
     background-image: url('../../assets/driver.jpg');
     background-position: center;
     background-size: cover;/* Cor de fundo semitransparente */

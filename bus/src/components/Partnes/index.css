@@ -12,10 +12,16 @@
     flex-wrap: wrap;
     gap: 15rem;
     justify-content: center;
+}
+.partness{
     overflow: hidden;
 }
 .partness img{
    width: 10rem;
    height: 10rem;
    border-radius: 20%;
+}
+.container-par h3{
+    color: #d00000;
+
 }

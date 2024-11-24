@@ -80,7 +80,6 @@ function Travel() {
     <section className="container container-travel">
       <div className="travel-part-one"></div>
       <div className="travel-part-two">
-        <span>Viagens</span>
         <p>
           A TransKalledy é uma empresa dedicada a proporcionar viagens municipais e estaduais
           <br />
@@ -90,9 +89,9 @@ function Travel() {
         </p>
         <div className="travels">
           <span ref={counterRef} className="counter">+ {counter} clientes</span>
-          <span ref={counterVRef} className="counter">+ {counterV} clientes</span>
-          <span ref={counterPRef} className="counter">+ {counterP} clientes</span>
-          <span ref={counterKRef} className="counter">+ {counterK} clientes</span>
+          <span ref={counterVRef} className="counter">+ {counterV} Veiculos</span>
+          <span ref={counterPRef} className="counter">+ {counterP} Mil pessoas transportadas</span>
+          <span ref={counterKRef} className="counter">+ {counterK} Milhões de KMs percorridos </span>
         </div>
       </div>
     </section>

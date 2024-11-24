@@ -2,7 +2,10 @@ import './index.css'
 import Police from '../../assets/police.jpg'
 import Natura from '../../assets/natura.svg'
 import Bio from '../../assets/brasil-bio.jpg'
+import  Susipe from '../../assets/susipe.png'
 import Agro from '../../assets/agropalma.jpg'
+import Phosfaz from '../../assets/phosfaz.jpg'
+import Fazepa from '../../assets/fasepa.png'
 
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react'
@@ -24,19 +27,37 @@ function Partnes(){
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 1500
+            delay: 500
         });
         reveall.reveal('.three', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2000
+            delay: 500
         });
         reveall.reveal('.four', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2500
+            delay: 500
+        });
+        reveall.reveal('.five', {
+            duration: 2000,
+            distance: '10rem',
+            origin: 'bottom',
+            delay: 500
+        });
+        reveall.reveal('.six', {
+            duration: 2000,
+            distance: '10rem',
+            origin: 'bottom',
+            delay: 500
+        });
+        reveall.reveal('.seven', {
+            duration: 2000,
+            distance: '10rem',
+            origin: 'bottom',
+            delay: 500
         });
 
         // Retorna uma função de cleanup, se necessário, para garantir que o ScrollReveal seja limpo quando o componente for desmontado
@@ -48,7 +69,7 @@ function Partnes(){
     }, []); // O array vazio [] garante que o useEffect rode uma vez após o componente ser montado
 
     return(
-        <section className="container-fluid container-par">
+        <section className="container-fluid container-par" id='partns'>
             <h3>Alguns dos nossos parceiros</h3>
             <div className="imgs">
                 <div className="partness one" >
@@ -62,6 +83,15 @@ function Partnes(){
                 </div>
                 <div className="partness four" >
                     <img src={Agro} alt="partnes"  />
+                </div>
+                <div className="partness five" >
+                    <img src={Susipe} alt="partnes"  />
+                </div>
+                <div className="partness six" >
+                    <img src={Fazepa} alt="partnes"  />
+                </div>
+                <div className="partness seven" >
+                    <img src={Phosfaz} alt="partnes"  />
                 </div>
             </div>
         </section>

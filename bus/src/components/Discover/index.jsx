@@ -47,9 +47,7 @@ function Discover(){
     return(
         <>
         <section className="container-fluid container-d">
-            <div className="d-one">
-
-            </div>
+            
             <div className="d-two">
                 <div className="d-two-one">
                   <span className='span-d'>Por que escolher a Transkalledy?</span>
@@ -60,7 +58,7 @@ function Discover(){
                     Viaje com confiança e tranquilidade!
                   </p>
                 </div>
-                <div className="row  d-two-two">
+                <div className=" container  d-two-two">
                     <div className="cards">
                     <div className="  card-services card-services-1">
                         <img src={Like} alt="svg" />

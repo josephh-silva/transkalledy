@@ -61,7 +61,15 @@
     width: 5rem;
     margin-bottom: 1rem; /* Ajuste para imagem ficar separada do texto */
 }
-.card-2, .card-6{
-    background-color: red;
+.card-1{
+    width: 25rem;
+}
+.card-2{
     width: 40rem;
+}
+.card-4{
+    width: 35rem;
+}
+.card-6{
+    width: 30rem;
 }
