@@ -22,8 +22,6 @@ const imgs = [
     { id: '2', imgbus: bus2 },
     { id: '3', imgbus: bus3 },
     { id: '4', imgbus: bus4 },
-    { id: '5', imgbus: bus5 },
-    { id: '6', imgbus: bus6 },
     { id: '7', imgbus: seat1},
     { id: '8', imgbus: seat2 },
     { id: '9', imgbus: seat3 },
@@ -34,7 +32,7 @@ const imgs = [
 ];
 
 function Carr() {
-    const [sliderPrev, setSliderPrev] = useState(2)
+    const [sliderPrev, setSliderPrev] = useState(1)
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 1024) {

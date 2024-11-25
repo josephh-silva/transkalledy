@@ -15,7 +15,6 @@
     text-align: center;
 }
 .front h3{
-    margin-bottom: 5rem;
     font-size: 3rem;
     background-color: red;
     display: inline-block;
@@ -45,13 +44,76 @@
 .h3-f, .p-f{
     overflow: hidden;
 }
+@media(min-width: 2000px) and (max-width: 2560px){
+    .container-swiper{
+        padding: 0;
+        margin-top: 9rem;
+    }
+    .front{
+        min-width: 90%;
+    }
+    .front h3{
+        font-size: 4rem;
+    }
+    .front p{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .swiper{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .img-bus{
+        width: 49rem;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+    
+    }
+}
+@media(min-width: 1400px) and (max-width: 2000px){
+    .container-swiper{
+        padding: 0;
+        margin-top: 9rem;
+    }
+    .front{
+        min-width: 70%;
+    }
+    .front h3{
+        font-size: 4rem;
+    }
+    .front p{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    .swiper{
+        width: 100%;
+    }
+    .img-bus{
+        width: 49rem;
+        height: 25rem;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+    
+    }
+}
 @media(min-width: 1024px) and (max-width: 1440px){
     .container-swiper{
         padding: 0;
-        margin-top: 13rem;
+        margin-top: 9rem;
+    }
+    .front{
+        min-width: 70%;
     }
     .front h3{
         font-size: 2rem;
+    }
+    .front p{
+        margin-top: 2rem;
     }
     .swiper{
         width: 100%;
@@ -69,7 +131,11 @@
 @media(min-width: 768px) and (max-width: 1024px){
     .container-swiper{
         padding: 0;
-        margin-top: 13rem;
+        margin-top: 5rem;
+
+    }
+    .front{
+        width: 80%;
     }
     .front h3{
         font-size: 2rem;
@@ -84,16 +150,16 @@
         background-size: cover;
         background-position: center;
         border-radius: 0;
-    
     }
 }
 @media(min-width: 425px) and (max-width: 768px){
     .container-swiper{
         padding: 0;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .front h3{
         font-size: 2rem;
+        margin-bottom: 0rem;
     }
     .front p{
         display: none;
@@ -102,7 +168,7 @@
         width: 100%;
     }
     .img-bus{
-        width: 26rem;
+        width: 100%;
         height: 25rem;
         object-fit: cover;
         background-size: cover;

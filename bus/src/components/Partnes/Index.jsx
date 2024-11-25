@@ -1,100 +1,76 @@
-import './index.css'
-import Police from '../../assets/police.jpg'
-import Natura from '../../assets/natura.svg'
-import Bio from '../../assets/brasil-bio.jpg'
-import  Susipe from '../../assets/susipe.png'
-import Agro from '../../assets/agropalma.jpg'
-import Phosfaz from '../../assets/phosfaz.jpg'
-import Fazepa from '../../assets/fasepa.png'
+import './index.css';
+import Police from '../../assets/police.jpg';
+import Natura from '../../assets/natura.svg';
+import Bio from '../../assets/brasil-bio.jpg';
+import Susipe from '../../assets/susipe.png';
+import Agro from '../../assets/agropalma.jpg';
+import Phosfaz from '../../assets/phosfaz.jpg';
+import Fazepa from '../../assets/fasepa.png';
+import { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import ScrollReveal from 'scrollreveal';
-import { useEffect } from 'react'
-function Partnes(){
+  // Importação correta do CSS para versões recentes do Swiper
+
+const imgP = [
+    { id: '1', imagem: Police },
+    { id: '2', imagem: Natura },
+    { id: '3', imagem: Bio },
+    { id: '4', imagem: Susipe },
+    { id: '5', imagem: Agro },
+    { id: '6', imagem: Phosfaz },
+    { id: '7', imagem: Fazepa }
+];
+
+function Partnes() {
+    const [sliderPrevT, setSliderPrevT] = useState(1);
+
     useEffect(() => {
-        // Inicializa o ScrollReveal dentro do useEffect
-        const reveall = ScrollReveal({
-            reset: true, // Se quiser que os efeitos sejam reiniciados após saírem da tela
-        });
-
-        // Coloca as revelações dentro do useEffect
-        reveall.reveal('.one', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.two', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.three', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.four', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.five', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.six', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-        reveall.reveal('.seven', {
-            duration: 2000,
-            distance: '10rem',
-            origin: 'bottom',
-            delay: 500
-        });
-
-        // Retorna uma função de cleanup, se necessário, para garantir que o ScrollReveal seja limpo quando o componente for desmontado
-        return () => {
-            // Não é estritamente necessário aqui, mas pode ser útil se você quiser limpar o ScrollReveal ao desmontar o componente
-            // Isso não é obrigatório a menos que você queira "limpar" os efeitos no desmontar
-            // ScrollReveal não tem um método específico para limpar, mas pode ser útil se você manipular outras bibliotecas
+        const handleResize = () => {
+            if (window.innerWidth < 1024) {
+                setSliderPrevT(2);  // Para telas menores que 1024px, exibe 1 slide
+            } else {
+                setSliderPrevT(3);  // Para telas maiores, exibe 3 slides
+            }
         };
-    }, []); // O array vazio [] garante que o useEffect rode uma vez após o componente ser montado
 
-    return(
-        <section className="container-fluid container-par" id='partns'>
+        // Chama handleResize uma vez ao carregar o componente
+        handleResize();
+
+        // Adiciona o event listener para resize
+        window.addEventListener('resize', handleResize);
+
+        // Limpa o event listener quando o componente for desmontado
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return (
+        <section className="container-fluid container-par" id="partns">
             <h3>Alguns dos nossos parceiros</h3>
             <div className="imgs">
-                <div className="partness one" >
-                    <img src={Police} alt="partnes"  />
-                </div>
-                <div className="partness two" >
-                    <img src={Natura} alt="partnes"  />
-                </div>
-                <div className="partness three" >
-                    <img src={Bio} alt="partnes"  />
-                </div>
-                <div className="partness four" >
-                    <img src={Agro} alt="partnes"  />
-                </div>
-                <div className="partness five" >
-                    <img src={Susipe} alt="partnes"  />
-                </div>
-                <div className="partness six" >
-                    <img src={Fazepa} alt="partnes"  />
-                </div>
-                <div className="partness seven" >
-                    <img src={Phosfaz} alt="partnes"  />
-                </div>
+                <Swiper
+                    slidesPerView={sliderPrevT}
+                    autoplay={{
+                        delay: 2000,  // Tempo em milissegundos entre cada slide
+                        disableOnInteraction: false,  // Não desativa o autoplay após interação
+                    }}
+                    className="swiper"
+                >
+                    {imgP.map((imgP) => (
+                        <SwiperSlide key={imgP.id} className="container-car">
+                            <img
+                                src={imgP.imagem}
+                                alt="onibus"
+                                className="img-busP"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
-    )
+    );
 }
-export default Partnes
+
+export default Partnes;

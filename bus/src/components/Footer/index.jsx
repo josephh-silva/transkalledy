@@ -14,7 +14,7 @@ function Footer() {
                 <div className="img-logo">
                     <img src={Logo} alt="img" />
                 </div>
-                <p>O melhor do transporte para vc</p>
+                <p>O melhor do transporte para você</p>
             </div>
             <div className='linkss'>
                 <span>Links Rapidos </span>

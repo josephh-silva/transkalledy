@@ -10,6 +10,7 @@ import StarLink from './components/StarLink'
 import Travel from './components/Travel'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Mission from './components/Mission'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <PartThree/>
       <Discover/>
       <Carr/>
+      <Mission/>
       <Partnes/>
       <Travel/>
       <Footer/>

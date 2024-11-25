@@ -1,27 +1,29 @@
 .container-par{
-    min-height: auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
 }
-.imgs{
-    margin-top: 7rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15rem;
-    justify-content: center;
-}
-.partness{
-    overflow: hidden;
-}
-.partness img{
-   width: 10rem;
-   height: 10rem;
-   border-radius: 20%;
+.img-busP{
+    width: 10rem;
+    height: 10rem;
 }
 .container-par h3{
     color: #d00000;
 
+}
+@media(min-width: 2000px) and (max-width: 2560px){
+    .img-busP{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+@media(min-width: 1440px) and (max-width: 2000px){
+    .img-busP{
+        width: 16rem;
+        height: 16rem;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1440px){
+    .img-busP{
+        width: 15rem;
+        height: 15rem;
+    }
 }

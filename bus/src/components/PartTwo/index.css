@@ -15,6 +15,7 @@
     display: inline-block; /* Ajusta automaticamente ao conteúdo */
     padding: 0.5rem; /* Adiciona algum espaçamento interno se necessário */
     border-radius: 2rem; 
+    color: #ffffff;
 }
 .about-one h1{
     overflow: hidden;
@@ -42,69 +43,146 @@
     left: 25rem;           /* Controla a distância da esquerda */
     width: 30vh;          /* Controla a largura da sobreposição */
     height: 30vh;         /* Controla a altura da sobreposição */
-    background-image: url('../../assets/driver.jpg');
+    background-image: url('../../assets/seat1.jpg');
     background-position: center;
     background-size: cover;/* Cor de fundo semitransparente */
     border-radius: 2rem;
     z-index: 1;  
     border: 0.3rem solid #ffffff;
 }
-@media(min-width: 1024px) and (max-width: 1339px){
+@media(min-width: 2000px) and (max-width:  2560px){
     .about{
         flex-direction: row;
         justify-content: center;
+        min-width: 100%;
     }
     .about-one{
         align-items: center;
         text-align: center;
         min-height: 50vh;
-        margin-left: 2rem;
+        min-width: 40%;
     }
     .about-one h1{
-        font-size: 2rem;
-    }
-    .about-one span{
-        font-size: 1.5rem;
-    }
-    .about-two{
-        height: 70vh;
-        width:100%;
-        position: relative; 
-        border-radius: 2rem;
-    }
-    .about-two::after{
-        top: 7rem;
-       left: 20rem;
-       height:15rem;
-    }
-}
-@media(min-width: 768px) and (max-width: 1024px){
-    .about{
-        flex-direction: row;
-        justify-content: center;
-    }
-    .about-one{
-        align-items: center;
-        text-align: center;
-        min-height: 50vh;
-        margin-left: 2rem;
-    }
-    .about-one h1{
-        font-size: 2rem;
+        font-size: rem;
     }
     .about-one span{
         font-size: 1.5rem;
     }
     .about-two{
         height: 50vh;
-        width:100%;
+        min-width:10%;
+        position: relative; 
+        border-radius: 2rem;
+    }
+    .about-two::after{
+       display: none;
+    }
+}
+@media(min-width: 1678px) {
+    .about{
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 3rem;
+    }
+    .about-one span{
+        font-size: 2rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:150%;
+        position: relative; 
+        border-radius: 2rem;
+    }
+    .about-two::after{
+        top: 7rem;
+        left: 35rem;
+    }
+}
+@media(min-width: 1440px) and (max-width: 1678px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 2.8rem;
+    }
+    .about-one span{
+        font-size: 1.5rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:110%;
+        position: relative; 
+        border-radius: 2rem;
+    }
+    .about-two::after{
+        top: 7rem;
+        left: 35rem;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1440px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+        margin-left: 1rem;
+    }
+    .about-one h1{
+        font-size: 2.1rem;
+    }
+    .about-one span{
+        font-size: 1.5rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:110%;
+        position: relative; 
+        border-radius: 2rem;
+    }
+    .about-two::after{
+        display: none;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 2rem;
+    }
+    .about-one{
+        align-items: center;
+        text-align: center;
+        min-height: 50vh;
+    }
+    .about-one h1{
+        font-size: 1.8rem;
+    }
+    .about-one span{
+        font-size: 1.3rem;
+    }
+    .about-two{
+        height: 50vh;
+        width:150%;
         position: relative; 
         border-radius: 2rem;
         overflow: hidden;
-    }
-    .about-two::after{
-       overflow: hidden;
-       left: 40rem;
     }
 }
 @media(min-width: 425px) and (max-width: 768px){
@@ -148,31 +226,23 @@
         min-height: 50vh;
     }
     .about-one h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .about-one span{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .about-two{
         height: 50vh;
-        width:85%;
+        width:100%;
         margin-right: 5rem;
         position: relative; 
         border-radius: 2rem;
-        margin-left: 1.5rem;
     }
     .about-two::after{
-       
-        position: absolute;
-        top: 5rem;            /* Controla a distância do topo */
-        left: 16rem;           /* Controla a distância da esquerda */
+        top: 7rem;            /* Controla a distância do topo */
+        left: 17rem;           /* Controla a distância da esquerda */
         width: 17vh;          /* Controla a largura da sobreposição */
         height: 27vh;         /* Controla a altura da sobreposição */
-        background-image: url('../../assets/driver.jpg');
-        background-position: center;
-        background-size: cover;/* Cor de fundo semitransparente */
-        border-radius: 2rem;
-        z-index: 1;  
     }
 }
 @media(min-width: 320px) and (max-width: 375px){
@@ -193,23 +263,15 @@
     }
     .about-two{
         height: 50vh;
-        width:80%;
+        width:100%;
         margin-right: 5rem;
         position: relative; 
         border-radius: 2rem;
-        margin-left: 2rem;
     }
     .about-two::after{
-       
-        position: absolute;
         top: 5rem;            /* Controla a distância do topo */
-        left: 10rem;           /* Controla a distância da esquerda */
+        left: 15rem;           /* Controla a distância da esquerda */
         width: 17vh;          /* Controla a largura da sobreposição */
         height: 27vh;         /* Controla a altura da sobreposição */
-        background-image: url('../../assets/driver.jpg');
-        background-position: center;
-        background-size: cover;/* Cor de fundo semitransparente */
-        border-radius: 2rem;
-        z-index: 1;  
     }
 }
